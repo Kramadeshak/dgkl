@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@font-face {
+    font-family: 'Manrope';
+    src: url(../assets/Manrope-VariableFont_wght.ttf);
+    font-weight: 400;
+}
+
+@layer components{
+    .content-container{
+        @apply flex flex-col
+        m-0 mt-3
+        h-full w-full
+        overflow-hidden;
+    }
+    .top-navigation{
+        @apply flex flex-row items-center justify-evenly
+        w-full h-20
+        m-0
+        shadow-lg;
+    }
+    .logo{
+        @apply self-center;
+    }
+    h1,h2,h3 {
+        font-family: 'Manrope';
+        color: #999999;
+    }
+}
